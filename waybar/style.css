@@ -29,7 +29,7 @@ window#waybar > box {
   background-color: @background;
 }
 
-#left1 {
+#menu {
   background-color: alpha(@foreground, 0.05);
   border-bottom: 1px solid alpha(@foreground, 0.5);
   border-radius: 2px;
@@ -51,15 +51,9 @@ window#waybar > box {
   background-color: @background;
 }
 
-#right1 {
-  background-color: alpha(@foreground, 0.05);
-  border-bottom: 1px solid alpha(@foreground, 0.5);
-  border-radius: 2px;
-  margin: 1px 2px;
-  padding: 0px 2px 0px;
-}
-
-#right2 {
+#system,
+#hardware,
+#tray-apps {
   background-color: alpha(@foreground, 0.05);
   border-bottom: 1px solid alpha(@foreground, 0.5);
   border-radius: 2px;
