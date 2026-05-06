@@ -1,3 +1,5 @@
+@import "../omarchy/current/theme/waybar.css";
+
 * {
 	background-image: none;
 	box-shadow: none;
@@ -20,7 +22,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: rgba(77, 145, 79, 0.7);
+	background-color: alpha(@foreground, 0.5);
 	background-size: 33%;
 }
 

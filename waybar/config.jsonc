@@ -9,7 +9,8 @@
 
   // >>> Modules Separators <<< //
   "modules-left": [
-    "group/menu", 
+    "group/menu",
+    "hyprland/window", 
     "group/music"
   ],
   "modules-center": [
@@ -105,21 +106,37 @@
   },
 
   // >>> Others Widgets <<< //
+  "hyprland/window": {
+    "format": "{initialTitle}",
+    "max-length": 25,
+    "separate-outputs": true,
+    "icon": true,
+    "icon-size": 16, 
+    "rewrite": {
+        "^$": "󰇄 Desktop",
+        "music.youtube.com(.*)": "󱖏 Youtube Music",
+        "web.whatsapp.com(.*)": " Whatsapp",
+        "gemini.google.com(.*)": " Gemini AI",
+        "github.com(.*)": " Github",
+        "calendar.google.com(.*)": " Google Calendar",
+        "contacts.google.com(.*)": "󰛋 Google Contacts"
+    }
+  },
   "hyprland/workspaces": {
     "persistent-workspaces": {"*": [ 1,2,3 ]},
     "on-click": "activate",
     "format": "{icon} {windows}",
     "format-icons": {
-        "1": "α",
-        "2": "β",
-        "3": "γ",
-        "4": "δ",
-        "5": "ε",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "10": "0"
+        "1": "α̅",
+        "2": "β̅",
+        "3": "γ̅",
+        "4": "δ̅",
+        "5": "ε̅",
+        "6": "στʹ",
+        "7": "ζ̅",
+        "8": "η̅",
+        "9": "θ̅",
+        "10": "ι̅"
     },
     "format-window-separator": " ",
     "window-rewrite-default": "",
