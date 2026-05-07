@@ -1,0 +1,31 @@
+{
+    "mpris": {
+        "format": "󰋎 {title}",
+        "format-paused": "<i><span color='grey'>{status_icon} {artist}</span></i>",
+        "max-length": 30,
+        "player-icons": {
+            "default": "⏸",
+            "mpv": "🎵"
+        },
+        "status-icons": {
+            "paused": "󰋐"  
+        },
+        //"ignored-players": ["firefox", "chromium", "brave"]
+        },
+        "clock": {
+        "format": "{:%A %H:%M}",
+        "format-alt": "{:L%d %B W%V %Y}",
+        "tooltip-format": "<span>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-click-right": "mode",
+            "format": {
+            "month": "<span color='#ffead3'><b>{}</b></span>",
+            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+            "today": "<span color='#ff6699'><b>{}</b></span>"
+            },
+        },
+        "on-click-right": "omarchy-launch-webapp https://calendar.google.com/calendar/u/0/r"
+    }
+}
