@@ -1,0 +1,25 @@
+@import "../../omarchy/current/theme/waybar.css";
+
+* {
+  border: none;
+  border-radius: 0px;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#mpris {
+  background-color: alpha(@foreground, 0.05);
+  border-bottom: 1px solid alpha(@foreground, 0.5);
+  border-radius: 2px;
+  margin: 1px 2px;
+  padding: 0px 4px 0px;
+  color: @foreground;
+  animation: repeat;
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

@@ -1,0 +1,42 @@
+@import "../../omarchy/current/theme/waybar.css";
+* {
+  border: none;
+  border-radius: 0px;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @transparent;
+}
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+    font-size: 13.5px;
+    margin-top: 0px;
+    padding-right: 8px;
+}
+
+#battery.warning {
+  color: #c95d0f;
+  background-color: @background;
+}
+
+#battery.critical:not(.charging) {
+  background-color: @background;
+  color: #e6d8ba;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

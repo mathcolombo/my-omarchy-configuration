@@ -1,0 +1,66 @@
+@import "../../omarchy/current/theme/waybar.css";
+
+* {
+  border: none;
+  border-radius: 0px;
+  min-height: 0;
+  font-family: 'JetBrainsMono Nerd Font';
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#workspaces > box {
+  background-color: @background;
+  opacity: 1;
+  margin: 1px 0px;
+  padding: 0px 0px 0px;
+}
+
+#workspaces button {
+  padding: 0px 10px;
+  margin: 1px 2px;
+  border-radius: 2px;
+  background-color: @background;
+  color: @foreground;
+  transition: all 0.15s ease-in-out;
+  opacity: 1;
+}
+
+#workspaces button.active {
+  color: @foreground;
+  padding: 0 10px;
+  margin: 1px 2px;
+  background-color: alpha(@foreground, 0.15);
+  border-bottom: 1.5px solid alpha(@foreground, 1);
+  border-radius: 2px;
+  opacity: 1.0;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.empty {
+  background-color: @background;
+  color: @foreground;
+  opacity: 0.52;
+  border-radius: 2px;
+  transition: all 0.15s ease-in-out;
+  padding: 0px 5px;
+  margin: 1px 2px;
+}
+
+#workspaces button.empty.active {
+  background-color: alpha(@foreground, 0.05);
+  border-bottom: 1.5px solid alpha(@foreground, 1);
+  border-radius: 2px;
+  color: @foreground;
+  opacity: 1;
+  padding: 0px 10px;
+  margin: 1px 2px;
+}
+
+#workspaces button:hover.empty,
+#workspaces button:hover {
+  background-color: @foreground;
+  color: @background;
+  opacity: 1;
+}
